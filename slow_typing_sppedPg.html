@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Test</title>
+    <!-- Google Fonts -->
+    <!-- AdSense Code -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2280029367728225"
+     crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Favicon -->
+    <link rel="icon" href="logo.png">
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen'></i>
+            <a href="index.html" style="text-decoration: none; color: rgb(255, 115, 0)"><span
+                    style="font-size: 20px; cursor: pointer;"><img src="logo.png" class="logo"> TypingKing</span></a>
+
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="#">TypingKing</a></span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="slow_typing_sppedPg.html">Slow Typing Speed?</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="darkLight-searchBox">
+                <div class="dark-light">
+                    <i class='bx bx-moon moon'></i>
+                    <i class='bx bx-sun sun'></i>
+                </div>
+
+                <div class="searchBox">
+                    <div class="searchToggle">
+                        <i class='bx bx-x cancel'></i>
+                        <i class='bx bx-search search'></i>
+                    </div>
+
+                    <div class="search-field">
+                        <input type="text" placeholder="Search...">
+                        <i class='bx bx-search'></i>
+                    </div>
+                </div>
+    </nav>
+    <div class="hero">
+        <h2>Do you Type Slow? Tips to Improve Your Typing Speed</h2>
+        <p>The average pace for women is 37 WPM and the average for men is 44. If your speed is below that, don't worry
+            - you can make big improvements with a little more practice each day. Learning your keyboard structure will
+            be helpful; The better you understand the layout, the faster you can type. Beginners typists are known to
+            practice the “hunt and peck” typing method, in which you use your index finger to find individual letters.
+            It can be a slow process. If you change your style to a "ten-fingered" style, where each finger of your hand
+            is responsible for a different part of the keyboard, you can train your hand for touch typing.</p>
+
+        <p>Typing at 57 WPM or more is great. An important factor for faster typists is touch input. Touch typing is a
+            method where you use muscle memory, not your eyes, to find keys. While it may take some getting used to,
+            it's much easier to type when you don't have to check if you have the right letters or numbers - and your
+            accuracy improves as you can watch the screen to make sure your words come out as expected. Practice through
+            games and repetitive typing exercises, like those described in Typey's interactive curriculum, that will
+            train your fingers for keyboard recognition and progress beyond. far from your typing speed.</p>
+
+        <h2>5 Tips for Improving Your Typing Speed & Accuracy</h2>
+        <h3>1. Starting Position Should Be Correct</h3>
+        <p>When practicing your typing skills, it is important to use correct hand placement. To get started, keep your
+            fingers in place on the main row keys (left hand on the A, S, D, and F keys and right hand on the J, K, L
+            and; keys;) with your thumb. yours above the spacebar keys . From there, you can move your fingers slightly
+            to get to nearby keys. Your hands should always return to this starting position.
+            These conventions are intended to help you become familiar with the keyboard. As you become more
+            experienced, you can experiment with different variations of this starting position to find the most
+            comfortable and natural for you.</p>
+
+        <h3>2. Don't Look Down on the Keyboard</h3>
+        <p>Instead of looking at your hands, focus on the screen. This can be tricky at first, especially if you haven't
+            mastered the correct key placement. However, viewing the screen will help you improve your accuracy as you
+            will be able to spot your typos as they happen. You'll also start to remember where the keys are, so you can
+            type faster as you practice.</p>
+        <h3>3. Maintain the Good Hand Posture</h3>
+        <p>Sitting in an upright position will facilitate faster typing. If you're used to lounging in a chair or
+            working on a couch, try sitting in an upright chair or working at a desk.</p>
+        <h3>4. Find a Comfortable Postion for Your Hands</h3>
+        <p>Improper hand placement can make typing uncomfortable for long periods of time. The space bar on the keyboard
+            should be centered relative to your body, so you don't have to read the screen or type at an angle. As you
+            type, rest your elbows on the table and keep your wrists slightly elevated. You should never bend or tilt
+            your wrist suddenly.</p>
+        <h3>5. Practice Makes a Man Perfect</h3>
+        <p>Nothing is mastered overnight, and to really improve your typing accuracy and speed, you need to practice
+            every day. There are many websites that offer free typing tests and exercises. It is important that you make
+            time for these typing exercises and assessments. Trying to quickly run through them will only lead to more
+            errors at first. Trust that your speed will naturally improve as you get used to the keyboard. Improving
+            your typing skills will not only make your student life easier, but it will also benefit you in your future
+            career. It may take a lot of practice to see improvement, but don't give up. You will type fast like a pro!
+        </p>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+    <script>
+
+        const body = document.querySelector("body"),
+            nav = document.querySelector("nav"),
+            modeToggle = document.querySelector(".dark-light"),
+            searchToggle = document.querySelector(".searchToggle"),
+            sidebarOpen = document.querySelector(".sidebarOpen"),
+            siderbarClose = document.querySelector(".siderbarClose");
+
+        let getMode = localStorage.getItem("mode");
+        if (getMode && getMode === "dark-mode") {
+            body.classList.add("dark");
+        }
+
+        // js code to toggle dark and light mode
+        modeToggle.addEventListener("click", () => {
+            modeToggle.classList.toggle("active");
+            body.classList.toggle("dark");
+
+            // js code to keep user selected mode even page refresh or file reopen
+            if (!body.classList.contains("dark")) {
+                localStorage.setItem("mode", "light-mode");
+            } else {
+                localStorage.setItem("mode", "dark-mode");
+            }
+        });
+
+        // js code to toggle search box
+        searchToggle.addEventListener("click", () => {
+            searchToggle.classList.toggle("active");
+        });
+
+
+        //   js code to toggle sidebar
+        sidebarOpen.addEventListener("click", () => {
+            nav.classList.add("active");
+        });
+
+        body.addEventListener("click", e => {
+            let clickedElm = e.target;
+
+            if (!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")) {
+                nav.classList.remove("active");
+            }
+        });
+
+    </script>
+</body>
+
+</html>
